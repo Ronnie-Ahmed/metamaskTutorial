@@ -85,22 +85,6 @@ function App() {
     } catch (err) {
       console.log(err);
     }
-    try {
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
-      const signer = provider.getSigner();
-
-      const contract = new ethers.Contract(address, abi, signer);
-      const amount = ethers.utils.parseUnits("100", 18); // Replace with the desired amount
-
-      const transaction = await contract.transfer(signer.getAddress(), amount);
-
-      // Wait for the transaction to be confirmed
-      await transaction.wait();
-
-      console.log("Tokens transferred successfully");
-    } catch (error) {
-      console.log(error);
-    }
   };
 
   return (
