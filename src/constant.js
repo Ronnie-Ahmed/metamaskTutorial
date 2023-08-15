@@ -1,4 +1,5 @@
-export const address = "0xd080F4205c0cBb2178D1b1A0EA774776C36f02F0";
+export const address = "0x74C91d093Ca1e2f2BF5425bec62f6599a5649841";
+
 export const abi = [
   {
     inputs: [],
@@ -103,13 +104,6 @@ export const abi = [
     type: "function",
   },
   {
-    inputs: [],
-    name: "minttoken",
-    outputs: [],
-    stateMutability: "nonpayable",
-    type: "function",
-  },
-  {
     inputs: [
       {
         internalType: "address",
@@ -184,6 +178,13 @@ export const abi = [
         type: "bool",
       },
     ],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "transferTokens",
+    outputs: [],
     stateMutability: "nonpayable",
     type: "function",
   },
